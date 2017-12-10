@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:angle="90" android:endColor="@color/caldroid_lighter_gray" android:startColor="@color/caldroid_lighter_gray" />
+
+            <stroke android:width="0dp" android:color="@color/caldroid_lighter_gray" />
+
+            <corners android:radius="@dimen/autocompletetextbox" />
+            <size android:width="@dimen/autocompletetextbox" android:height="@dimen/autocompletetextbox" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <gradient android:angle="90" android:endColor="@color/caldroid_lighter_gray" android:startColor="@color/caldroid_lighter_gray" />
+
+            <stroke android:width="0dp" android:color="@color/caldroid_lighter_gray" />
+
+            <corners android:radius="@dimen/autocompletetextbox" />
+            <size android:width="@dimen/autocompletetextbox" android:height="@dimen/autocompletetextbox" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient android:angle="90" android:endColor="@android:color/transparent" android:startColor="@android:color/transparent" />
+
+            <stroke android:width="0dp" android:color="@android:color/transparent" />
+
+            <corners android:radius="@dimen/autocompletetextbox" />
+            <size android:width="@dimen/autocompletetextbox" android:height="@dimen/autocompletetextbox" />
+        </shape>
+    </item>
+
+
+</selector>

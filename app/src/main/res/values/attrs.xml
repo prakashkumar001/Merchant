@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleIndicator">
+    <attr name="ci_width" format="dimension"/>
+    <attr name="ci_height" format="dimension"/>
+    <attr name="ci_margin" format="dimension"/>
+    <attr name="ci_animator" format="reference"/>
+    <attr name="ci_animator_reverse" format="reference"/>
+    <attr name="ci_drawable" format="reference"/>
+    <attr name="ci_drawable_unselected" format="reference"/>
+
+    <attr name="ci_orientation" format="enum">
+        <enum name="horizontal" value="0"/>
+        <enum name="vertical" value="1"/>
+    </attr>
+
+    <attr name="ci_gravity">
+        <flag name="top" value="0x30"/>
+        <flag name="bottom" value="0x50"/>
+        <flag name="left" value="0x03"/>
+        <flag name="right" value="0x05"/>
+        <flag name="center_vertical" value="0x10"/>
+        <flag name="fill_vertical" value="0x70"/>
+        <flag name="center_horizontal" value="0x01"/>
+        <flag name="fill_horizontal" value="0x07"/>
+        <flag name="center" value="0x11"/>
+        <flag name="fill" value="0x77"/>
+        <flag name="clip_vertical" value="0x80"/>
+        <flag name="clip_horizontal" value="0x08"/>
+        <flag name="start" value="0x00800003"/>
+        <flag name="end" value="0x00800005"/>
+    </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NiceSpinner">
+        <attr name="arrowTint" format="color" />
+        <attr name="hideArrow" format="boolean" />
+        <attr name="leftDrawable" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorDisabled" format="color" />
+        <attr name="fab_colorRipple" format="color" />
+        <attr name="fab_showShadow" format="boolean" />
+        <attr name="fab_shadowColor" format="color" />
+        <attr name="fab_shadowRadius" format="dimension" />
+        <attr name="fab_shadowXOffset" format="dimension" />
+        <attr name="fab_shadowYOffset" format="dimension" />
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+        <attr name="fab_showAnimation" format="reference" />
+        <attr name="fab_hideAnimation" format="reference" />
+        <attr name="fab_label" format="string" />
+        <attr name="fab_elevationCompat" format="dimension" />
+        <attr name="fab_progress_color" format="color" />
+        <attr name="fab_progress_backgroundColor" format="color" />
+        <attr name="fab_progress_indeterminate" format="boolean" />
+        <attr name="fab_progress_max" format="integer" />
+        <attr name="fab_progress" format="integer" />
+        <attr name="fab_progress_showBackground" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionMenu">
+        <attr name="menu_showShadow" format="boolean" />
+        <attr name="menu_buttonSpacing" format="dimension" />
+        <attr name="menu_labels_margin" format="dimension" />
+        <attr name="menu_labels_showAnimation" format="reference" />
+        <attr name="menu_labels_hideAnimation" format="reference" />
+        <attr name="menu_labels_paddingTop" format="dimension" />
+        <attr name="menu_labels_paddingLeft" format="dimension" />
+        <attr name="menu_labels_paddingRight" format="dimension" />
+        <attr name="menu_labels_paddingBottom" format="dimension" />
+        <attr name="menu_labels_padding" format="dimension" />
+        <attr name="menu_labels_textColor" format="reference|color" />
+        <attr name="menu_labels_textSize" format="dimension" />
+        <attr name="menu_labels_cornerRadius" format="dimension" />
+        <attr name="menu_labels_showShadow" format="boolean" />
+        <attr name="menu_labels_colorNormal" format="color" />
+        <attr name="menu_labels_colorPressed" format="color" />
+        <attr name="menu_labels_colorRipple" format="color" />
+        <attr name="menu_labels_position" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="menu_icon" format="reference" />
+        <attr name="menu_animationDelayPerItem" format="integer" />
+        <attr name="menu_buttonToggleAnimation" format="reference" />
+        <attr name="menu_labels_singleLine" format="boolean" />
+        <attr name="menu_labels_ellipsize" format="enum">
+            <enum name="none" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+            <enum name="marquee" value="4" />
+        </attr>
+        <attr name="menu_labels_maxLines" format="integer" />
+        <attr name="menu_fab_size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+        <attr name="menu_labels_style" format="reference" />
+        <attr name="menu_labels_customFont" format="string" />
+        <attr name="menu_shadowColor" format="color" />
+        <attr name="menu_shadowRadius" format="dimension" />
+        <attr name="menu_shadowXOffset" format="dimension" />
+        <attr name="menu_shadowYOffset" format="dimension" />
+        <attr name="menu_colorNormal" format="color" />
+        <attr name="menu_colorPressed" format="color" />
+        <attr name="menu_colorRipple" format="color" />
+        <attr name="menu_openDirection" format="enum">
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+        </attr>
+        <attr name="menu_backgroundColor" format="color" />
+        <attr name="menu_fab_label" format="string" />
+        <attr name="menu_fab_show_animation" format="reference" />
+        <attr name="menu_fab_hide_animation" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="Cell" >
+        <attr name="android:textColor" />
+        <attr name="android:background" />
+    </declare-styleable>
+    <attr name="styleCaldroidViewLayout" format="reference"/>
+    <attr name="styleCaldroidLeftArrow" format="reference"/>
+    <attr name="styleCaldroidRightArrow" format="reference"/>
+    <attr name="styleCaldroidMonthName" format="reference"/>
+    <attr name="styleCaldroidNormalCell" format="reference"/>
+    <attr name="styleCaldroidSquareCell" format="reference"/>
+    <attr name="styleCaldroidGridView" format="reference"/>
+    <attr name="styleCaldroidWeekdayView" format="reference"/>
+    <declare-styleable name="DateState">
+        <attr name="state_date_today" format="boolean"/>
+        <attr name="state_date_selected" format="boolean"/>
+        <attr name="state_date_disabled" format="boolean"/>
+        <attr name="state_date_prev_next_month" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="el_duration" format="integer" />
+        <attr name="el_expanded" format="boolean" />
+        <attr name="el_parallax" format="float" />
+        <attr name="android:orientation"/>
+    </declare-styleable>
+
+    <attr name="src" format="reference" />
+    <attr name="angle" format="integer" />
+    <attr name="scaleType">
+        <enum name="centerCrop" value="0" />
+        <enum name="fitXY" value="1" />
+    </attr>
+    <attr name="gravity">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+        <enum name="top" value="2" />
+        <enum name="bottom" value="3" />
+    </attr>
+
+    <attr name="diagonalDirection">
+        <enum name="left_to_right" value="0" />
+        <enum name="right_to_left" value="1" />
+        <enum name="top_to_bottom" value="2" />
+        <enum name="bottom_to_top" value="3" />
+    </attr>
+
+    <attr name="tint" format="color" />
+    <attr name="solidColor" format="color" />
+    <attr name="fillColor" format="color" />
+
+    <declare-styleable name="DiagonalView">
+        <attr name="angle" />
+        <attr name="gravity" />
+        <attr name="tint" />
+        <attr name="solidColor" />
+        <attr name="fillColor" />
+        <attr name="diagonalDirection" />
+    </declare-styleable>
+
+    <declare-styleable name="WeekCalendar">
+        <attr name="numOfPages" format="integer"/>
+        <attr name="daysTextSize" format="dimension"/>
+        <attr name="daysTextColor" format="color"/>
+        <attr name="daysBackgroundColor" format="color"/>
+        <attr name="weekTextSize" format="dimension"/>
+        <attr name="weekTextColor" format="color"/>
+        <attr name="weekBackgroundColor" format="color"/>
+        <attr name="selectedBgColor" format="color"/>
+        <attr name="todaysDateBgColor" format="color"/>
+        <attr name="dayNameLength">
+            <enum name="singleLetter" value="0"/>
+            <enum name="threeLetters" value="1"/>
+        </attr>
+        <attr name="hideNames"  format="boolean"/>
+
+        <attr name="todaysDateTextColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="PinEntryView">
+        <attr name="numDigits" format="integer" />
+        <attr name="digitWidth" format="dimension" />
+        <attr name="digitHeight" format="dimension" />
+        <attr name="digitSpacing" format="dimension" />
+        <attr name="digitBackground" format="reference|color" />
+        <attr name="digitTextSize" format="dimension" />
+        <attr name="digitTextColor" format="color" />
+        <attr name="digitElevation" format="dimension" />
+        <attr name="mask" format="string" />
+        <attr name="pinAccentColor" format="color" />
+        <attr name="accentWidth" format="dimension" />
+        <attr name="accentType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="all" value="1" />
+            <enum name="character" value="2" />
+        </attr>
+        <attr name="pinInputType" format="enum">
+            <enum name="text" value="1" />
+            <enum name="number" value="2" />
+        </attr>
+        <attr name="accentRequiresFocus" format="boolean" />
+    </declare-styleable>
+
+</resources>

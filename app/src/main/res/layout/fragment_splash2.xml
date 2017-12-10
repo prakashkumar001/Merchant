@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/autocompletetextbox"
+        android:src="@drawable/spalsh_background2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/loginbuttonheight"
+        android:paddingBottom="48dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/ll_slide2"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/logopadding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/marginsmall"
+                android:text="Get started today!"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/red_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/marginsmall"
+                android:gravity="center"
+                android:text="Register to become a part of our network offering a simplified platform with analytics support." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginsmall"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/btn_learnmore"
+                        android:layout_width="@dimen/loginbuttonwidth"
+                        android:layout_height="@dimen/loginbuttonheight"
+                        android:background="@drawable/gray_selector"
+                        android:gravity="center"
+                        android:text="Learn More"
+                        android:textColor="@android:color/darker_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/btn_start"
+                        android:layout_width="@dimen/loginbuttonwidth"
+                        android:layout_height="@dimen/loginbuttonheight"
+                        android:background="@drawable/red_selector"
+                        android:gravity="center"
+                        android:text="Get Started"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:state_pressed="true"><shape>
+    <gradient android:angle="90" android:endColor="@color/red_light" android:startColor="@color/red_light" />
+
+    <stroke android:width="0dp" android:color="@color/red_light" />
+
+    <corners android:radius="@dimen/autocompletetextbox"/>
+</shape></item>
+<item android:state_enabled="false"><shape>
+    <gradient android:angle="90" android:endColor="@color/red_light" android:startColor="@color/red_light" />
+
+    <stroke android:width="0dp" android:color="@color/red_light" />
+
+    <corners android:radius="@dimen/autocompletetextbox"/>
+</shape></item>
+<item><shape>
+    <gradient android:angle="90" android:endColor="@color/red_text"
+        android:startColor="@color/red_text" />
+
+    <stroke android:width="0dp" android:color="@color/red_text" />
+
+    <corners android:radius="@dimen/autocompletetextbox"/>
+</shape></item>
+
+</selector>

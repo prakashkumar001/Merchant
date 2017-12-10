@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5BB2C5</color>
+    <color name="colorPrimaryDark">#38C7B3</color>
+    <color name="colorAccent">#424242</color>
+    
+    <color name="red_text">#DD1100</color>
+    <color name="statusbar">#DF2800</color>
+    <color name="red_light">#FE2E2E</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="signup_background">#FDE9E5</color>
+    <color name="light_gray">#d4d4d4</color>
+
+    <color name="caldroid_white">#FFFFFF</color>
+    <color name="blue">#ff33b5e5</color>
+    <color name="caldroid_555">#555</color>
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <color name="caldroid_lighter_gray">#ddd</color>
+    <color name="caldroid_black">#000000</color>
+
+
+</resources>

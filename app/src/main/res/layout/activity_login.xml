@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/logopadding"
+        android:layout_marginRight="@dimen/logopadding"
+        android:layout_marginTop="@dimen/autocompletetextbox"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your ID"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/marginsmall"
+        android:textColor="@color/red_text"
+        android:paddingTop="50dp"
+        android:layout_marginLeft="@dimen/scoreboxsize" />
+
+    <LinearLayout
+        android:id="@+id/ll_userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_userid"
+        android:layout_marginLeft="@dimen/scoreboxsize"
+        android:orientation="horizontal">
+
+        <com.sm.merchant.pinbox.PinEntryView
+            android:id="@+id/pin_entry_userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_enterpin"
+            android:layout_marginTop="@dimen/marginsmall"
+            app:accentType="none"
+            app:digitBackground="@drawable/border"
+            app:mask=""
+            app:numDigits="4"
+            app:pinInputType="number" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Passowrd"
+        android:layout_marginTop="@dimen/categorytext"
+        android:paddingLeft="@dimen/marginsmall"
+        android:layout_below="@+id/ll_userid"
+        android:textColor="@color/red_text"
+        android:layout_marginLeft="@dimen/scoreboxsize" />
+
+    <LinearLayout
+        android:id="@+id/ll_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_password"
+        android:layout_marginLeft="@dimen/scoreboxsize"
+        android:orientation="horizontal">
+
+        <com.sm.merchant.pinbox.PinEntryView
+            android:id="@+id/pin_entry_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_enterpin"
+            android:layout_marginTop="@dimen/marginsmall"
+            app:accentType="none"
+            app:digitBackground="@drawable/border"
+            app:mask=""
+            app:numDigits="6"
+            app:pinInputType="number" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/scoreboxsize"
+        android:layout_marginTop="@dimen/categorytext"
+        android:layout_marginRight="@dimen/autocompletetextbox"
+        android:layout_below="@+id/ll_password">
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/loginbuttonheight"
+        android:background="@drawable/red_selector"
+        android:text="LOGIN"
+        android:paddingRight="@dimen/marginsmall"
+        android:layout_marginLeft="@dimen/marginsmall"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/loginbuttonheight"
+        android:text="Reset"
+        android:background="@drawable/transparent_selector"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/red_text" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/categorytext"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_register1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/marginsmall"
+            android:paddingTop="@dimen/marginsmall"
+            android:text="Don't have an account ?"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginsmall"
+            android:background="@drawable/transparent_selector"
+            android:paddingBottom="@dimen/marginsmall"
+            android:paddingTop="@dimen/marginsmall"
+            android:text="Register"
+            android:textColor="@color/red_text" />
+
+    </LinearLayout>
+
+</RelativeLayout>
